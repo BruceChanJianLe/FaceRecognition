@@ -8,7 +8,7 @@ Currently, there are four ready to use face detector out there:
 - Histogram of Oriented Gradient (HOG) Face Detector in Dlib
 - Deep Learning based Face Detector in Dlib
 
-The one used in this this project is HOG face detector as it is the fastest among all and the accuracy is good. However, it needs faces that face the camera.
+The one used in this this project is HOG face detector as it is the fastest among all and the accuracy is good. However, it needs faces that face the camera. The algorithm of this project will output a result image of the input file. Use argparser to input a picture.
 
 Below I shall discuss the pros and cons of the 4 different methods.
 
@@ -23,8 +23,8 @@ Below I shall discuss the pros and cons of the 4 different methods.
 ### Cons
 
 - The major drawback of this method is that it gives a lot of False predictions.
-- Doesn°Øt work on non-frontal images.
-- Doesn°Øt work under occlusion
+- Doesn¬°¬Øt work on non-frontal images.
+- Doesn¬°¬Øt work under occlusion
 
 ## 2. DNN Face Detector in OpenCV
 
@@ -32,7 +32,7 @@ Below I shall discuss the pros and cons of the 4 different methods.
 
 - Most accurate out of the four methods
 - Runs at real-time on CPU
-- Works for different face orientations ®C up, down, left, right, side-face etc.
+- Works for different face orientations ¬®C up, down, left, right, side-face etc.
 - Works even under substantial occlusion
 - Detects faces across various scales ( detects big as well as tiny faces )
 
@@ -51,7 +51,7 @@ Below I shall discuss the pros and cons of the 4 different methods.
 
 ### Cons
 
-- The major drawback is that it does not detect small faces as it is trained for minimum face size of 80°¡80. Thus, you need to make sure that the face size should be more than that in your application. You can however, train your own face detector for smaller sized faces.
+- The major drawback is that it does not detect small faces as it is trained for minimum face size of 80¬°√Å80. Thus, you need to make sure that the face size should be more than that in your application. You can however, train your own face detector for smaller sized faces.
 - The bounding box often excludes part of forehead and even part of chin sometimes.
 - Does not work very well under substantial occlusion
 - Does not work for side face and extreme non-frontal faces, like looking down or up.
@@ -68,7 +68,7 @@ Below I shall discuss the pros and cons of the 4 different methods.
 ### Cons
 
 - Very slow on CPU
-- Does not detect small faces as it is trained for minimum face size of 80°¡80. Thus, you need to make sure that the face size should be more than that in your application. You can however, train your own face detector for smaller sized faces.
+- Does not detect small faces as it is trained for minimum face size of 80¬°√Å80. Thus, you need to make sure that the face size should be more than that in your application. You can however, train your own face detector for smaller sized faces.
 - The bounding box is even smaller than the HOG detector.
 
 ## Reference
