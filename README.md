@@ -81,6 +81,13 @@ To preform face recognition, in this project I am using face encodings.
 Face encoding is transforming the facial feature into a set of numbers which may, for example, represent the distance of the cheeck bones, distance of each eyes and so on. 128 set of them.
 And then euclidean distance between two encodings, those that are less that the threshold (0.6) will result in same faces, while those larger than threshold (0.6) will be considered as different faces.
 
+### To use the algorithm
+Input 3 image of 3 person you know, and input one image that you would like to recognize. The algorithm will output the result at the terminal. Note that if the image is too small, you may want to resize fisrt below feeding into the algorithm.
+
+## Refernce
+
+https://www.lynda.com/Python-tutorials/Representing-face-set-measurements/628706/788536-4.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3adeep+learning%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2
+
 ## Others
 
 ### or create a new repository on the command line
