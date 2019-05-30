@@ -14,13 +14,13 @@ Below I shall discuss the pros and cons of the 4 different methods.
 
 ## 1. Haar Cascade Face Detector in OpenCV
 
-###Pros
+### Pros
 
 - Works almost real-time on CPU
 - Simple Architecture
 - Detects faces at different scales
 
-###Cons
+### Cons
 
 - The major drawback of this method is that it gives a lot of False predictions.
 - Doesn¡¯t work on non-frontal images.
@@ -28,7 +28,7 @@ Below I shall discuss the pros and cons of the 4 different methods.
 
 ## 2. DNN Face Detector in OpenCV
 
-###Pros
+### Pros
 
 - Most accurate out of the four methods
 - Runs at real-time on CPU
@@ -36,20 +36,20 @@ Below I shall discuss the pros and cons of the 4 different methods.
 - Works even under substantial occlusion
 - Detects faces across various scales ( detects big as well as tiny faces )
 
-###Cons
+### Cons
 
 - Slow
 
 ## 3. Histogram of Oriented Gradient Face Detector by Dlib
 
-###Pros
+### Pros
 
 - Fastest method on CPU
 - Works very well for frontal and slightly non-frontal faces
 - Light-weight model as compared to the other three.
 - Works under small occlusion
 
-###Cons
+### Cons
 
 - The major drawback is that it does not detect small faces as it is trained for minimum face size of 80¡Á80. Thus, you need to make sure that the face size should be more than that in your application. You can however, train your own face detector for smaller sized faces.
 - The bounding box often excludes part of forehead and even part of chin sometimes.
@@ -58,14 +58,14 @@ Below I shall discuss the pros and cons of the 4 different methods.
 
 ## 4. CNN Face Detector in Dlib
 
-###Pros
+### Pros
 
 - Works for different face orientations
 - Robust to occlusion
 - Works very fast on GPU
 - Very easy training process
 
-###Cons
+### Cons
 
 - Very slow on CPU
 - Does not detect small faces as it is trained for minimum face size of 80¡Á80. Thus, you need to make sure that the face size should be more than that in your application. You can however, train your own face detector for smaller sized faces.
@@ -75,15 +75,15 @@ Below I shall discuss the pros and cons of the 4 different methods.
 
 https://www.learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/
 
-##Face Recognition
+## Face Recognition
 
 To preform face recognition, in this project I am using face encodings.
 Face encoding is transforming the facial feature into a set of numbers which may, for example, represent the distance of the cheeck bones, distance of each eyes and so on. 128 set of them.
 And then euclidean distance between two encodings, those that are less that the threshold (0.6) will result in same faces, while those larger than 0.6 will be considered as different faces.
 
-##Others
+## Others
 
-###or create a new repository on the command line
+### or create a new repository on the command line
 
 echo "# FacialRecognition" >> README.md
 
@@ -97,7 +97,7 @@ git remote add FR https://github.com/BruceChanJianLe/FaceRecognition.git
 
 git push -u FR master
 
-###or push an existing repository from the command line
+### or push an existing repository from the command line
 
 git remote add FR https://github.com/BruceChanJianLe/FaceRecognition.git
 
