@@ -79,7 +79,7 @@ https://www.learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-pytho
 
 To preform face recognition, in this project I am using face encodings.
 Face encoding is transforming the facial feature into a set of numbers which may, for example, represent the distance of the cheeck bones, distance of each eyes and so on. 128 set of them.
-And then euclidean distance between two encodings, those that are less that the threshold (0.6) will result in same faces, while those larger than 0.6 will be considered as different faces.
+And then euclidean distance between two encodings, those that are less that the threshold (0.6) will result in same faces, while those larger than threshold (0.6) will be considered as different faces.
 
 ## Others
 
